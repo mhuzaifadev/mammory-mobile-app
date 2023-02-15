@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384004541434",
+    "project_id": "mammory",
+    "storage_bucket": "mammory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384004541434:android:5e1c7c89ec3a9b024f7243",
+        "android_client_info": {
+          "package_name": "com.example.mammory_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384004541434-efme8d17f6n2h7ldgs7q39mj6s5deaeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDmEqV3Lk5HJmonoWxCZbh4hx1QP4RWqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384004541434-efme8d17f6n2h7ldgs7q39mj6s5deaeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
