@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:mammory_project/controllers/auth_controller.dart';
 import 'package:mammory_project/views/login/Report/report.dart';
 import 'package:mammory_project/views/login/userprofile.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
@@ -63,13 +64,15 @@ class _GeneratePageState extends State<GeneratePage> {
     // return jsonDecode(response);
   }
 
+  final authCont = Get.put(AuthController());
+
   void initState() {
     super.initState();
     setState(() {
       loading = true;
     });
     // Call the uploadImage function to make the API request
-    uploadImage('Test Lady', 'testlady@gmail.com', '12-01-2000',
+    uploadImage(authCont.userInfo.name ?? "", authCont.userInfo.email ?? "", '12-01-2000',
             File(widget.imagename.path))
         .then((value) {
       setState(() {
